@@ -16,7 +16,6 @@ const HeadSeo = (props) => {
     }
 
     if (typeof window !== "undefined") {
-        // Client-side-only code
         url = window.location.href
     }
 
