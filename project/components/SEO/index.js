@@ -6,7 +6,7 @@ const HeadSeo = (props) => {
             <meta httpEquiv="Content-Type" content="text/html; charset=utf-8"></meta>
             <meta charSet="UTF-8"></meta>
             <meta property="og:locale" content="vi_VN"></meta>
-            <meta property="og:title" content="https://tina-cake.vercel.app//hop-socola-valentine-tp-nha-trang-qua-tang-142-mua-qua-tang-valentine-o-djau-djep-chocolate-nghe-thuat-nha-trang" />
+            <meta property="og:title" content={props.title} />
             {/* <meta property="og:image" content="your_image_url" /> */}
             <meta name="viewport" content="width=device-width, initial-scale = 1.0"></meta>
             <meta property="og:title" content={props.og}></meta>
