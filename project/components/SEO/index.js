@@ -2,7 +2,9 @@ import Head from 'next/head';
 const HeadSeo = (props) => {
     return (
         <Head>
-            <title>{props.title || 'Trang chủ | Tina Cake'}</title>
+            <title>{props.title.length < 62
+                ? props.title
+                : props.title.slice(0, 62) + '...' || 'Trang chủ | Tina Cake'}</title>
             <meta httpEquiv="Content-Type" content="text/html; charset=utf-8"></meta>
             <meta charSet="UTF-8"></meta>
             <meta property="og:locale" content="vi_VN"></meta>
@@ -12,8 +14,12 @@ const HeadSeo = (props) => {
                 ? props.title
                 : props.title.slice(0, 62) + '...'}></meta>
             {/* <meta property="og:description" content=" - Bánh sinh Nhật Nha Trang - Bánh fondant - Cupcake – Cửa hàng bánh Sinh Nhật – Bánh Cưới chuyên bán sẵn, nhận đặt, ..."></meta> */}
-            <meta property="og:description" content={props.description}></meta>
-            <meta name='description' content={props.description}></meta>
+            <meta property="og:description" content={props.title.length < 62
+                ? props.title
+                : props.title.slice(0, 62) + '...'}></meta>
+            <meta name='description' content={props.title.length < 62
+                ? props.title
+                : props.title.slice(0, 62) + '...'}></meta>
             <meta name="full-screen" content="yes"></meta>
             <meta name="apple-mobile-web-app-capable" content="yes"></meta>
             <meta name="mobile-web-app-capable" content="yes"></meta>
