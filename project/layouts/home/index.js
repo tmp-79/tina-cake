@@ -12,7 +12,7 @@ import NewsLatestLayout from "./newsLastestLayout/NewsLastestLayout";
 export default function HomePage() {
   return (
     <>
-      <HeadSeo title="Trang chủ | Tina Cake" />
+      <HeadSeo title="Trang chủ | Tina Cake" description=' - Bánh sinh Nhật Nha Trang - Bánh fondant - Cupcake – Cửa hàng bánh Sinh Nhật – Bánh Cưới chuyên bán sẵn, nhận đặt, ...'/>
       <Banner></Banner>
       <NewsLayout
         title="Tin tức nổi bật"
